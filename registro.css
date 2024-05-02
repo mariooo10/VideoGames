@@ -21,12 +21,13 @@ body{
     align-items: center;
     text-align: center;
 
+
     .formulario{
         position: relative;
+        font-size: 1.5rem;
         font-style: normal;
         font: bold;
         background-color: lightblue;
-        font-size: 1rem;
         border-radius: 50px;
         margin: 0;
         border: 2px;
@@ -35,12 +36,14 @@ body{
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
+        
+
 
     
     }
 
     #Pais{
-        font-size: 1rem;
+        font-size: 1.5rem;
         
     
     
