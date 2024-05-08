@@ -20,30 +20,38 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
 
     .formulario{
         position: relative;
-        font-size: 1.5rem;
-        font-style: normal;
+        font-size: 2rem;
         font: bold;
         background-color: lightblue;
         border-radius: 50px;
         margin: 0;
         border: 2px;
-        padding: 1rem;
+        
         text-align: center;
         flex-direction: column;
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: nowrap;
+        width: 60vh;
+        height: 70vh;
 
+        .firstname{
+            font-size: 1rem;
 
+            .lastname{
+                font-size: 16px;
+            }
+
+        }
+    
     
     }
-
+    
     #Pais{
-        font-size: 1.5rem;
+        font-size: 1rem;
         
     
     
@@ -51,7 +59,7 @@ body{
 
     .foot{
         text-align: right;
-        font-size: 16px;
+        font-size: 1rem;
         color: white;
         font: bold;
         background-color: blueviolet;
@@ -64,15 +72,17 @@ body{
 
 
 footer{
-    color: aliceblue;
     font: bold;
+    color: white;
     text-align: center;
 
     .social{
-        font-size: 1rem;
-        font-weight: 300;
+        font-size: 1.2rem;
         padding-top: 2rem;
+        border: 2rem;
 
     }
+
+
 }
 
