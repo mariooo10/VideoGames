@@ -11,28 +11,32 @@
 </head>
 <body>
     <H1></H1>
-    <section class="formulario">
+    <section class="formul" >
         
-        <form action="">
+        <form id="formulario">
             <fieldset>
             <!--<legend>No utilizado</legend>-->
             
                 <h1>Registro</h1><br>
 
                 <label for="firstname"></label>
-                <input class="firstname" type="text" size="30" name="firstname" placeholder="Ingrese su nombre"><br><br>
+                <input class="firstname" type="text" size="30" name="firstname" placeholder="Ingrese su nombre">
+                <span id="nombre-error" class="error">Ingresa tu nombre</span><br><br>
 
                 <label for="lastname"></label>
-                <input class="lastname" type="text" size="30" name="lastname" placeholder="Ingrese su apellido"><br><br>
+                <input class="lastname" type="text" size="30" name="lastname" placeholder="Ingrese su apellido">
+                <span id="lastname-error" class="error"></span><br><br>
 
                 <label for="email"></label>
-                <input class="email" type="email" size="30" name="email" placeholder="Ingrese su e-mail"><br><br>
+                <input class="email" type="email" size="30" name="email" placeholder="Ingrese su e-mail">
+                <span id="email-error" class="error"></span><br><br>
                 
                 <label for="bdate">Fecha de Nacimiento</label><br>
                 <input class="bdate" type="date" size="30" name="bdate" placeholder="Ingrese su Fecha de Nacimiento"><br><br>
 
                 <label for="password"></label>
-                <input class="pass" type="password" size="30" name="password" placeholder="Contraseña"><br><br>
+                <input class="pass" type="password" size="30" name="password" placeholder="Contraseña">
+                <span id="nombre-error" class="error"></span><br><br>
 
 
                 <select name="Pais" id="Pais">
@@ -59,11 +63,15 @@
             </fieldset>
         </form>
 
-</section>            
-    
-<foot class="foot">
+    </section>      
+
+
+    <foot class="foot">
         <a href="/index.html" target="_self" type="Inicio">Volver</a>
     </foot>
+
+    <script src="script.js"></script>
+
 </body>
 
 <footer class="footer">
