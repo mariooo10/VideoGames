@@ -10,33 +10,36 @@
     <title>Registrarse</title>
 </head>
 <body>
-    <H1></H1>
-    <section class="formul" >
+    <form action="" method="POST" id="form">
+        <H1>Registro</H1>
+    
+        <div class="form">
         
-        <form id="formula">
-            <fieldset>
-                        
-                <h1>Registro</h1><br>
-
+            <div class="grupo">
                 <label for="firstname"></label>
-                <input class="firstname" type="text" size="30" name="firstname" placeholder="Ingrese su nombre">
+                <input class="firstname" type="text" size="30" name="firstname" id="name" placeholder="Ingrese su nombre">
                 <span id="nombre-error" class="error"></span><br><br>
-
+            </div>
+            <div class="grupo">
                 <label for="lastname"></label>
-                <input class="lastname" type="text" size="30" name="lastname" placeholder="Ingrese su apellido">
+                <input class="lastname" type="text" size="30" name="lastname" id="name" placeholder="Ingrese su apellido">
                 <span id="lastname-error" class="error"></span><br><br>
-
+            </div>
+            <div class="grupo"> 
                 <label for="email"></label>
-                <input class="email" type="email" size="30" name="email" placeholder="Ingrese su e-mail">
+                <input class="email" type="email" size="30" name="email" id="email" placeholder="Ingrese su e-mail">
                 <span id="email-error" class="error"></span><br><br>
-                
+            </div>
+            <div class="grupo">    
                 <label for="bdate">Fecha de Nacimiento</label><br>
                 <input class="bdate" type="date" size="30" name="bdate" placeholder="Ingrese su Fecha de Nacimiento"><br><br>
-
+            </div>
+            <div class="grupo">
                 <label for="password"></label>
                 <input class="pass" type="password" size="30" name="password" placeholder="Contraseña">
                 <span id="nombre-error" class="error"></span><br><br>
-
+            </div>
+            <div class="grupo">
 
                 <select name="Pais" id="Pais">
                     <option value="1">País</option>
@@ -57,12 +60,12 @@
             
                 <input class="registrarse" type="submit" value="Registrarse">
                 <input class="borrar" type="reset" value="Borrar"><br><br>
-                
+                <p class="warnings" id="warnings"></p>
 
-            </fieldset>
-        </form>
+            </div>
+        </div>
 
-    </section>      
+    </form>      
 
 
     <foot class="foot">

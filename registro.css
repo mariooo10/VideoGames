@@ -4,130 +4,136 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
-
 }
 
 body{
     background-color: black;
-    color: whitesmoke;    
     background: url(/img/backgroundmyl.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     
+}
 
-    .formul{
-        position: relative;
-        font-size: 1.5rem;
-        font: bold;
-        background-color: lightblue;
-        border-radius: 50px;
-        margin: 0;
-        border: 2px;
-        text-align: center;
-        flex-direction: column;
-        display: flex;
-        flex-wrap: nowrap;
-        width: 60vh;
-        height: 60vh;
+h1{
+    text-align: center;
+    font-weight: 600;
+    color: #5e5d5d;
+}
 
-        .firstname{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
+form{
+    background: lightblue;
+    margin-top: 40px;
+    padding: 0 0;
+    border-radius: 30px;
+    width: 25%;
+}
 
-            
-        }    
-
-        .lastname{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
-            
-        }
-
-        .email{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
-            
-        }
+.form{
+    width: 100%;
+    margin: auto;
         
-        .bdate{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
+}
 
-        }
-        .pass{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
-        }
-        
-
-        #Pais{
-            font-size: 1.5rem;
-            height: 2rem;
-            border-radius: 5px;
-
-            
-        
-        }
-
-        .checkbox{
-            font-size: 2rem;
-            
-            
-
-
-        }
-
-        .registrarse{
-            font-size: 1rem;
-            height: 2rem;
-            border-radius: 5px;
-            width: 7rem;
-
-        }
-
-        .borrar{
-            font-size: 1rem;
-            height: 2rem;
-            width: 7rem;
-            border-radius: 5px;
-
-
-        }
+form .grupo{
+    position: relative;
+    margin: 25px ;
     
-    
-    
-    
-    }
-    
-    
+}
 
+input{
+    background: white;
+    color: #c6c6c6;
+    font-size: 16px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+    font-weight: 700;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(240, 48, 48);
+    font-size: 14px;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink;
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+    color: grey;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: transform 0.3s box-shadow 0.3s;
+
+            &:hover{
+                background-color: gold;
+                transform: scale(0.95);
+                box-shadow: 0 0 10px yellow;
+                }
+}
+
+.checkbox{
+    color: #5e5d5d;
     
+}
+
+h5{
+    color:#5e5d5d;;
     
 }
 
 .foot{
-    padding: 1rem;
-    margin: 1.5rem;
-    text-align: justify;
-    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink;
+    
+    margin: 30px auto;
+    display: inline-block;
+    justify-content: right;
+    align-items: right;
     color: grey;
-    font: bold;
-    background-color: pink;
-    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
     text-decoration: none;
+    
 
     transition: transform 0.3s box-shadow 0.3s;
 
@@ -142,21 +148,21 @@ body{
 
 
 
-
-
-
-footer{
-    font: bold;
-    color:white;
-    text-align: center;
-
-    .social{
-        font-size: 1.2rem;
-        padding-top: 2rem;
-        border: 2rem;
-
+@media screen and (max-width:500px){
+    form{
+        width: 60%;
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
