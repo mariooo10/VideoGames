@@ -1,17 +1,12 @@
 let div=document.createElement("div")
 div.setAttribute("class","container")
 document.body.append(div);
-let heading=document.createElement("H1")
-heading.textContent="Free Games List ";
-heading.setAttribute("class","text-center")
-heading.setAttribute("id","title")
-div.append(heading)
-// //row div
+
 let row=document.createElement("div");
 row.setAttribute("class","row text-center");
 div.append(row);
 
-let sample=async()=>{
+let cargarjuegos=async()=>{
     const url = 'https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc';
 const options = {
 	method: 'GET',
@@ -30,7 +25,7 @@ try {
         newDiv.classList.add('col-lg-4');
         newDiv.innerHTML = `
           <div class="card" style="width: 18rem">
-            <h5 class="card-header">${element.title}</h5>
+            <h2 class="card-header">${element.title}</h2>
             <img src="${element.thumbnail}" class="card-img-top" alt="image" />
           </div>
         `;
@@ -41,4 +36,4 @@ try {
 }
 
 }
-sample();
+cargarjuegos();

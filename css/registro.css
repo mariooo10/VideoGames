@@ -27,7 +27,7 @@ h1{
 
 form{
     background: lightblue;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 0 0;
     border-radius: 30px;
     width: 25%;
@@ -41,15 +41,15 @@ form{
 
 form .grupo{
     position: relative;
-    margin: 25px ;
-    
+    margin: 15px 30px;
+
 }
 
 input{
     background: white;
     color: #c6c6c6;
-    font-size: 16px;
-    padding: 5px 10px 10px 5px;
+    font-size: 14px;
+    padding: 2%;
     display: block;
     width: 100%;
     border-radius: 5px;
@@ -78,19 +78,10 @@ input:valid~label{
     font-weight: 700;
 }
 
-.warnings{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: rgb(240, 48, 48);
-    font-size: 14px;
-}
-
-button{
+.registrar{
     font-family: Arial, Helvetica, sans-serif;
     background: pink;
-    display: block;
-    width: 70%;
+    width: 40%;
     margin: 5px auto;
     color: grey;
     height: 40px;
@@ -108,50 +99,59 @@ button{
                 }
 }
 
-.checkbox{
-    color: #5e5d5d;
-    
-}
-
-h5{
-    color:#5e5d5d;;
-    
-}
-
-.foot{
+.borrar{
     font-family: Arial, Helvetica, sans-serif;
     background: pink;
-    
-    margin: 30px auto;
-    display: inline-block;
-    justify-content: right;
-    align-items: right;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 5px auto;
     color: grey;
     height: 40px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     border-radius: 10px;
+
+    transition: transform 0.3s box-shadow 0.3s;
+
+            &:hover{
+                background-color: gold;
+                transform: scale(0.95);
+                box-shadow: 0 0 10px yellow;
+                }
+}
+
+
+.checkbox{
+    color: #5e5d5d;
+    
+}
+
+
+
+.back{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    margin-top: 50px;
+    padding: 10px;
+    display: inline-block;
+    color: grey;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
     text-decoration: none;
     
-
     transition: transform 0.3s box-shadow 0.3s;
 
     &:hover{
             background-color: gold;
             transform: scale(0.95);
             box-shadow: 0 0 10px yellow;
-            }
-    
-}
-
-
-
-
-@media screen and (max-width:500px){
-    form{
-        width: 60%;
     }
+    
 }
 
 
