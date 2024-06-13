@@ -90,7 +90,7 @@ body{
 
     .sectionPrincipal{
         color: white;
-        background:url("/img/backgroundmyl.jpg");
+        background:url(/img/backgroundmyl.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
