@@ -8,7 +8,7 @@
 
 body{
     background-color: black;
-    background: url(/img/backgroundmyl.jpg);
+    background-image: url("../img/backgroundmyl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
